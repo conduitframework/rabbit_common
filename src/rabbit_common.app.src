@@ -1,7 +1,9 @@
 {application, rabbit_common,
- [{description, "RabbitMQ Common Libraries"},
+ [{pkg_name, conduit_rabbit_common},
+  {description, "RabbitMQ Common Libraries"},
   {vsn, "2.7.1"},
   {modules, []},
   {registered, []},
   {env, []},
-  {applications, [kernel, stdlib]}]}.
+  {applications, [kernel, stdlib]},
+  {licenses, ["MPL"]}]}.
