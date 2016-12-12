@@ -1,9 +1,11 @@
 {application, amqp_client,
- [{description, "RabbitMQ AMQP Client"},
+ [{pkg_name, conduit_amqp_client},
+  {description, "RabbitMQ AMQP Client"},
   {vsn, "3.6.2"},
   {modules, []},
   {registered, [amqp_sup]},
   {env, [{prefer_ipv6, false},
          {ssl_options, []}]},
   {mod, {amqp_client, []}},
-  {applications, [kernel, stdlib, xmerl, rabbit_common]}]}.
+  {applications, [kernel, stdlib, xmerl, rabbit_common]},
+  {licenses, ["MPL"]}]}.
